@@ -1,0 +1,7 @@
+.component {
+  margin: 12px;
+  padding: 12px;
+  max-width: 550px;
+  border: 2px solid #333;
+  text-align: center;
+}
