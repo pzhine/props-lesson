@@ -21,8 +21,8 @@ class Parent extends React.Component {
 
         <h3>Active: {this.state.active}</h3>
 
-        <Child />
-        <Sibling />
+        <Child active={this.state.active} onSetActive={this.onSetActive.bind(this)}/>
+        <Sibling active={this.state.active} />
 
       </div>
     )

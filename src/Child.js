@@ -1,16 +1,16 @@
 import React from 'react';
 
-function Child() {
+function Child(props) {
   return (
     <div className="component">
 
       <h1>Child</h1>
 
-      <button>
+      <button onClick={() => props.onSetActive('Child')}>
         Activate!
       </button>
 
-      <h3>Active:</h3>
+      <h3>Active: {props.active}</h3>
 
     </div>
   )
